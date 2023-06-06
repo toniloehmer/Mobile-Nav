@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ghu7vcq.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title></title>
+  </head>
+  <body>
+
+<div class="page-wrapper">
+
+
+    <div class="uk-container uk-visible@l">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container nav-top" uk-navbar>
+        <div class="uk-navbar-left">
+        <a href="index.html" class="uk-navbar-item uk-logo"><img src="assets/img/logo-kagfreiland.svg" class="logo" alt="kagfreiland"></a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li><a href="#">Aktuelles</a></li>
+            <li><a href="spenden.html">Spenden</a></li>
+            <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+          </ul>
+        </div>
+    </nav>
+    <nav class="uk-navbar-container nav-bottom" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="#">Label</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Konsumenten</a></li>
+                      <li><a href="#">Produzenten</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Produkte</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Aktuelle Angebote</a></li>
+                      <li><a href="#">Verkaufsstellen</a></li>
+                      <li><a href="#">Online-Märkte</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Projekte</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Lebwohl</a></li>
+                      <li><a href="#">Sauwohl</a></li>
+                      <li><a href="#">Alpsäuli</a></li>
+                      <li><a href="#">Haus im Gras</a></li>
+                      <li><a href="#">All of it</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Unterstützung</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">Spenden</a></li>
+                      <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+                      <li><a href="#">Geschenkspenden</a></li>
+                      <li><a href="#">Legate</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Organisation</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a href="#">KAG Freiland</a></li>
+                      <li><a href="#">Geschichte</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Publikationen</a></li>
+                      <li><a href="#">Presse</a></li>
+                  </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+      </div>
+    </div>
+
+
+<!-- MOBILE NAV -->
+<div class="uk-container uk-hidden@l">
+  <nav class="uk-navbar-container" uk-navbar="mode: click" uk-sticky="animation: uk-animation-slide-top; show-on-up: false">
+    <!-- logo or title-->
+    <div class="uk-navbar-left nav-overlay"><a class="uk-navbar-item uk-logo" href="#">
+        <!--h3 Site Name--><img src="assets/img/logo-kagfreiland.svg" alt="logo" width="150"></a></div>
+    <!-- end logo or title-->
+    <!-- menu-->
+    <div class="uk-navbar-right nav-overlay">
+      <div class="uk-navbar-flip">
+        <ul class="uk-navbar-nav uk-visible@l">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+          <li><a href="#">Item 5</a></li>
+          <li><a href="#">Item 6</a></li>
+          <!--<li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>-->
+        </ul>
+        <ul class="uk-navbar-nav uk-hidden@l">
+          <!--<li><a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a></li>-->
+          <li><a class="uk-navbar-toggle" uk-toggle="target: #mobile-navbar"><span uk-icon="icon: menu; ratio: 2"></span>
+
+</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- endmenu-->
+    <!-- Overlay Search-->
+    <!-- <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+      <div class="uk-navbar-item uk-width-expand">
+        <form class="uk-search uk-search-navbar uk-width-1-1">
+          <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+        </form>
+      </div><a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+    </div>-->
+    <!-- end overlay search-->
+  </nav>
+    <div id="mobile-navbar" uk-offcanvas="mode: slide; flip: true">
+      <div class="uk-offcanvas-bar uk-light">
+        <!-- off-canvas close button-->
+        <!--<button class="uk-offcanvas-close" type="button" uk-close></button>--><span class="uk-offcanvas-close" uk-icon="icon: close; ratio: 2"></span>
+        <!-- off-canvas close button-->
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <!-- logo or title-->
+          <li class="uk-text-center" style="padding: 0 0 25px 0;"><a href="#">
+              <!--h3 Site Name--><img src="assets/img/logo-kagfreiland.svg" alt="logo" width="150"></a></li>
+          <!-- end logo or title-->
+          <!-- menu-->
+          <!--<li>
+            <hr>
+          </li>-->
+          <!--<li class="uk-text-center">
+            <h3>Menu</h3>
+          </li>-->
+
+        <!-- <li class="uk-nav-divider"></li> -->
+			
+			
+			<ul class="uk-nav uk-nav-primary uk-margin-auto-vertical uk-nav-parent-icon uk-text-uppercase" uk-nav>
+				
+				<li><a href="#">Aktuelles</a></li>
+				<li><a href="#">Spenden</a></li>
+				<li><a href="#">Mitgliedschaft</a></li>
+				
+				<li class="uk-nav-divider"></li>
+				
+                <li class="uk-parent">
+                	<a href="#">Label</a>
+                    	<ul class="uk-nav-sub uk-text-large">
+                        	<li><a href="#">Konsumenten</a></li>
+                            <li><a href="#">Porduzenten</a></li>
+                        </ul>
+                </li>
+				
+				<li class="uk-parent">
+                	<a href="#">Produkte</a>
+                    	<ul class="uk-nav-sub uk-text-large">
+                            <li><a href="#">Aktuelle Angebote</a></li>
+                            <li><a href="#">Verkaufsstellen</a></li>
+                            <li><a href="#">Online-Märkte</a></li>
+                        </ul>
+                </li>
+				
+				<li class="uk-parent">
+                	<a href="#">Projekte</a>
+                    	<ul class="uk-nav-sub uk-text-large">
+                        	<li><a href="#">Lebwohl</a></li>
+                            <li><a href="#">Sauwohl</a></li>
+                            <li><a href="#">Alpsäuli</a></li>
+                            <li><a href="#">Haus im Gras</a></li>
+                            <li><a href="#">All of it</a></li>
+                        </ul>
+                </li>
+				
+				<li class="uk-parent">
+                	<a href="#">Unterstützung</a>
+                    	<ul class="uk-nav-sub uk-text-large">
+                        	<li><a href="#">Spenden</a></li>
+                            <li><a href="#">Mitgliedschaft</a></li>
+                            <li><a href="#">Geschenkspenden</a></li>
+                            <li><a href="#">Legate</a></li>
+                        </ul>
+                </li>
+				
+				<li class="uk-parent">
+                	<a href="#">Organisation</a>
+                    	<ul class="uk-nav-sub uk-text-large">
+                        	<li><a href="#">KAG Freiland</a></li>
+                            <li><a href="#">Geschichte</a></li>
+                            <li><a href="#">Publikationen</a></li>
+                            <li><a href="#">Presse</a></li>
+                        </ul>
+                </li>
+				
+				
+            </ul>
+			
+				
+			
+        </ul>
+      </div>
+    </div>
+</div>
+<!-- / MOBILE NAV -->
+
+
+
+
+
+    <!-- Content -->
+    <div class="uk-container">
+          <div class="uk-inline">
+            <img src="media/header-startseite.jpg" alt="Header Startseite">
+            <div class="uk-position-bottom-left uk-padding-large bild-titel">
+              <h1>Leistungsdruck</h1>
+              <p><strong>Hochleistungszucht - die Grenzen des Möglichen.</strong> - Bericht im neuen <a href="">KAGmagazin</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container">
+      <div class="uk-padding-large text-inhalt">
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans.
+          Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien.
+          Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. </p>
+    </div>
+  </div>
+
+
+<!-- Cards -->
+<div class="uk-container">
+<div class="uk-grid uk-child-width-expand@s uk-grid-small uk-grid-match">
+
+<div>
+    <div class="uk-card uk-padding-large">
+      <div class="uk-card-media-top">
+        <img src="assets/img/logo-hofgeschlachtet.svg" class="small" alt="">
+      </div>
+      <div class="uk-card-body">
+            <p>Erste <b>Produkte</b> aus dem Tierwohlprojekt Lebwohl sind auf dem Hof Baumman erhältlich. <a href="">mehr</a></p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="uk-card uk-padding-large">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Tierwohlprojekt Lebwohl</h3>
+            <p>Schonende Schlachtung unserer Nutztiere - Schweizweit! <a href="">Projektstand Mai 2020</a></p>
+        </div>
+        <div class="uk-card-media-bottom">
+            <img src="assets/img/logo-lebwohl.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="uk-card uk-padding-large">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title"><i>KAGfreiland</i>-Mitgliedschaft</h3>
+            <p>Werden Sie KAGfreiland-Mitglied und erhalten sie 4x im Jahr das KAGmagazin. </p>
+        </div>
+        <div class="uk-card-media-bottom">
+            <img src="assets/img/kueken.png" alt="">
+        </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+<!-- Footer -->
+<footer class="uk-margin-top page-footer" uk-sticky>
+  <div class="uk-container">
+
+  <div class="main-footer">
+    <div class="footer-small footer-50 footer-small-1 active-1">
+      <h4 class="margin-0">Kontakt</h4>
+      <p>
+      KAGfreiland<br>
+      Engelgasse 12a<br>
+      Postfach <br>
+      9001 St.Gallen <br>
+      071 222 18 18 <br>
+      <a href="">Online-Anfrage</a>
+      </p>
+    </div>
+    <div class="footer-small active  footer-small-2 active-1">
+      <div class="footer-small-title">
+        <h4>Spendenkonten</h4>
+      </div>
+      <div class="footer-small-text">
+        <div class="p-container-1 active-1">
+          <p>
+            Postfinance Bern<br>
+            KAGfreiland<br>
+            9001 St.Gallen<br>
+            IBAN: CH02 0900 0000 0500 5<br>
+            SWIFT Code: POFICHBEXXX
+          </p>
+        </div>
+        <div class="p-container-2">
+          <p>
+          Raiffeisenbank St.Gallen <br>
+          KAGfreiland<br>
+          9001 St.Gallen<br>
+          IBAN: CH17 8000 5000 0430 5508 3<br>
+          SWIFT Code: RAIFCH22
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-small footer-50 footer-small-3">
+      <p class="footer-small-text-3">
+        <a href="">Newsletter</a><br>
+        <a href="">Impressum</a><br>
+        <a href="">Datenschutz</a><br>
+        <a href="">Publikationen</a>
+        </p>
+          <p class="copyright">
+            Copyright © 2020 KAGfreiland
+          </p>
+  </div>
+  </div>
+
+
+</div>
+</footer>
+
+
+
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Spende-Tool -->
+    <script language="javascript" src="https://widget.raisenow.com/widgets/lema/kagfr-27a1/js/dds-init-widget-de.js" type="text/javascript"></script>
+
+
+  </body>
+</html>
